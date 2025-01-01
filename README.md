@@ -30,10 +30,13 @@ This project was inspired by [niklasr22](https://github.com/niklasr22) and his w
     - Middle Wire
       - Green: Data
 
-## Installation
+## Configure your Raspberry Pi
 Enable SPI in the Raspberry Pi config with `sudo raspi-config`
 
-Use `git clone` and reference the project in your solution
+## Installation
+```
+dotnet add package Pi5Pixel.WS2812
+```
 
 ## Usage
 ```CSharp

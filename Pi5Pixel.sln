@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pi5Pixel.WS2812", "Pi5Pixel.WS2812\Pi5Pixel.WS2812.csproj", "{624F3702-5D41-4071-A9DF-88B9620ADDFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pi5Pixel.Abstraction", "Pi5Pixel.Abstraction\Pi5Pixel.Abstraction.csproj", "{2852E8F6-FE3A-4684-9B6A-3AE4FADDED67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{624F3702-5D41-4071-A9DF-88B9620ADDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{624F3702-5D41-4071-A9DF-88B9620ADDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{624F3702-5D41-4071-A9DF-88B9620ADDFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2852E8F6-FE3A-4684-9B6A-3AE4FADDED67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2852E8F6-FE3A-4684-9B6A-3AE4FADDED67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2852E8F6-FE3A-4684-9B6A-3AE4FADDED67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2852E8F6-FE3A-4684-9B6A-3AE4FADDED67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

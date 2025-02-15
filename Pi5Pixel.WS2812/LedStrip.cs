@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Device.Spi;
+using Pi5Pixel.Abstraction;
+using Pi5Pixel.Abstraction.Exceptions;
 
 namespace Pi5Pixel.WS2812;
 
-public class LedStrip : IDisposable
+public class LedStrip : ILedStrip
 {
     public Color[] Pixels { get; private set; }
-
     public int LedCount { get; private set; }
     
     private readonly SpiDevice _device;
@@ -32,11 +33,12 @@ public class LedStrip : IDisposable
     
     private Color[] GenerateEmptyColors() => new Color[LedCount].Select(_ => new Color()).ToArray();
 
-    public void ChangeLedCount(int ledCount, bool callShow = false)
+    public void ChangeLedCount(int ledCount, bool updateStrip = false)
     {
+        if (ledCount < 1) throw new LedStripLengthException(ledCount);
         LedCount = ledCount;
         Pixels = GenerateEmptyColors();
-        if (callShow) Show();
+        if (updateStrip) Show();
     }
 
     public void SetPixelColor(int index, byte red, byte green, byte blue) => Pixels[index] = new Color(red, green, blue);

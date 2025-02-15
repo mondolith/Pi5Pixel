@@ -15,4 +15,8 @@
         <PackageReference Include="System.Device.Gpio" Version="3.2.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Pi5Pixel.Abstraction\Pi5Pixel.Abstraction.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Pi5Pixel.WS2812;
+namespace Pi5Pixel.Abstraction;
 
 public class Color(byte red, byte green, byte blue)
 {
